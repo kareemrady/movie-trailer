@@ -7,6 +7,17 @@
 
 Created using **Python 2.7.12**
 
+Uses **PyYaml** for story lines to install PyYaml from cmd line using pip:
+
+```
+pip install pyyaml
+
+```
+
+for other methods of installing PyYaml or to check the PyYaml docs go to : 
+
+[PyYaml Docs](http://pyyaml.org/wiki/PyYAMLDocumentation)
+
 ## Description
 
 

@@ -1,16 +1,29 @@
 import media
 import fresh_tomatoes as ft
+import yaml
 
+'''
+  Movies file contains a movies list needed for the open_movies_page(movies)
+  method, Imported from fresh_tomatoes py file
+
+'''
+
+# Using PyYAML to load Story lines
+with open('story_lines.yml', 'r') as f:
+    story_lines = yaml.load(f)
+
+# image_urls dictonary contains shortned links to movie poster
 image_urls = {
     "independence_day":
-    "https://upload.wikimedia.org/wikipedia/en/b/bb/Independence_day_movieposter.jpg",
+    "https://goo.gl/AgQPbw",
     "scream":
-    "https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Scream_movie_poster.jpg/220px-Scream_movie_poster.jpg",
+    "https://goo.gl/nNt1CV",
     "brave_heart":
-    "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Braveheart_imp.jpg/220px-Braveheart_imp.jpg",
+    "https://goo.gl/zzp6Cp",
     "theory_of_everything":
-    "https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Theory_of_Everything.jpg/220px-Theory_of_Everything.jpg"}
+    "https://goo.gl/bEhncu"}
 
+# youtube_urls dictonary contains shortned links to movie trailer
 youtube_urls = {
     "independence_day":
     "https://youtu.be/B1E7h3SeMDk",
@@ -20,21 +33,6 @@ youtube_urls = {
     "https://youtu.be/wj0I8xVTV18",
     "theory_of_everything":
     "https://youtu.be/Salz7uGp72c"
-}
-
-story_lines = {
-    "independence_day":
-    "Disparate groups of people who converge in the Nevada desert in the aftermath of a\
-    calamitous attack by an ostensibly powerful extraterrestrial race from an unknown origin.",
-    "scream":
-    "High school students in the fictional town of Woodsboro, California,\
-    who becomes the target of a mysterious killer known as Ghostface",
-    "brave_heart":
-    "William Wallace, a 13th-century Scottish warrior who led the Scots\
-    in the First War of Scottish Independence against King Edward I of England",
-    "theory_of_everything":
-    "Jane Wilde Hawking,deals with her relationship with her ex-husband, theoretical physicist Stephen Hawking,\
-    his diagnosis of motor neurone disease, and his success in physics"
 }
 
 independence_day = media.Movie("Independence Day",
