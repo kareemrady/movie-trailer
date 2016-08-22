@@ -1,14 +1,14 @@
 # UDACITY Full Stack Nanodegree
----------------------------------
+
 
 ## Project Movie Trailer Webiste
----------------------------------
 
 
-Created using ** Python 2.7.12 **
+
+Created using **Python 2.7.12**
 
 ## Description
--------------------------------
+
 
 ### fresh_tomatoes.py:
 Contains the HTM & CSS & JS for the Movie Trailer Webite
@@ -29,6 +29,6 @@ Movie should be defined with the following attributes:
 
 ### To Add a Movie :
 
-1. Go to ** movies.py ** file create an instance of the movie class
+1. Go to **movies.py** file create an instance of the movie class
 2. add the movie instance to the movies list defined in the same file
-3. Run the ** movies.py ** file to create\modify the ** fresh_tomatoes.html ** page
+3. Run the **movies.py** file to create\modify the **fresh_tomatoes.html** page
